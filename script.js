@@ -4,7 +4,7 @@
   // --- Date in header ---
   const dateEl = document.getElementById("today-date");
   if (dateEl) {
-    dateEl.textContent = new Date().toLocaleDateString(undefined, {
+    dateEl.textContent = new Date().toLocaleDateString("fr-FR", {
       weekday: "long",
       year: "numeric",
       month: "long",
@@ -36,26 +36,26 @@
   const fallbackStories = [
     {
       category: "Tech",
-      title: "AI tools reshape the modern newsroom",
+      title: "Les outils d'IA transforment les rédactions modernes",
       summary:
-        "Editors are pairing human judgment with automation to surface stories faster without sacrificing accuracy.",
-      author: "Newsroom Staff",
+        "Les rédacteurs combinent jugement humain et automatisation pour publier plus vite sans sacrifier la rigueur.",
+      author: "Rédaction",
       date: new Date().toISOString(),
     },
     {
-      category: "Markets",
-      title: "Global indices steady as investors weigh rate outlook",
+      category: "Marchés",
+      title: "Les indices mondiaux stables à l'approche des résultats",
       summary:
-        "Traders are watching central bank signals closely as earnings season gets underway.",
-      author: "Markets Desk",
+        "Les investisseurs scrutent les signaux des banques centrales avant la saison des résultats.",
+      author: "Service Marchés",
       date: new Date().toISOString(),
     },
     {
-      category: "World",
-      title: "Climate talks focus on adaptation funding",
+      category: "Monde",
+      title: "Les discussions climatiques se concentrent sur l'adaptation",
       summary:
-        "Delegates are pressing for faster deployment of resources to vulnerable regions.",
-      author: "World Desk",
+        "Les délégations plaident pour un déploiement plus rapide des fonds vers les régions vulnérables.",
+      author: "Service Monde",
       date: new Date().toISOString(),
     },
   ];
@@ -63,9 +63,9 @@
   function formatDate(iso) {
     try {
       const d = new Date(iso);
-      return d.toLocaleDateString(undefined, {
-        month: "short",
+      return d.toLocaleDateString("fr-FR", {
         day: "numeric",
+        month: "short",
         year: "numeric",
       });
     } catch (_) {
@@ -81,18 +81,23 @@
       article.className = "card";
       article.innerHTML = `
         <div class="card-body">
-          <span class="card-cat">${escapeHtml(story.category || "News")}</span>
+          <span class="card-cat">${escapeHtml(story.category || "Actu")}</span>
           <h3 class="card-title">${escapeHtml(story.title || "")}</h3>
           <p class="card-summary">${escapeHtml(story.summary || "")}</p>
           <div class="card-meta">
-            <span>${escapeHtml(story.author || "Staff")}</span>
+            <span>${escapeHtml(story.author || "Rédaction")}</span>
             <time datetime="${escapeHtml(story.date || "")}">${formatDate(story.date)}</time>
           </div>
         </div>
       `;
       grid.appendChild(article);
     });
-    if (sectionNote) sectionNote.textContent = `${stories.length} stories`;
+    if (sectionNote) {
+      sectionNote.textContent =
+        stories.length > 1
+          ? `${stories.length} articles`
+          : `${stories.length} article`;
+    }
   }
 
   function escapeHtml(str) {
@@ -106,7 +111,7 @@
 
   fetch("news.json", { cache: "no-store" })
     .then((res) => {
-      if (!res.ok) throw new Error("Failed to load news.json");
+      if (!res.ok) throw new Error("Échec du chargement de news.json");
       return res.json();
     })
     .then((data) => {
@@ -115,6 +120,6 @@
     })
     .catch(() => {
       render(fallbackStories);
-      if (sectionNote) sectionNote.textContent = "Showing sample stories";
+      if (sectionNote) sectionNote.textContent = "Articles d'exemple affichés";
     });
 })();

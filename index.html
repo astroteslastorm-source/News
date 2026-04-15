@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Daily news updates on technology, markets, and world events." />
-  <title>News Update</title>
+  <meta name="description" content="Actualités quotidiennes sur la technologie, les marchés et le monde." />
+  <title>Actu du jour</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand">
-        <span class="brand-mark">N</span>
-        <span class="brand-name">News Update</span>
+        <span class="brand-mark">A</span>
+        <span class="brand-name">Actu du jour</span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#latest" class="nav-link">Latest</a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#latest" class="nav-link">À la une</a>
         <a href="#tech" class="nav-link">Tech</a>
-        <a href="#markets" class="nav-link">Markets</a>
-        <a href="#world" class="nav-link">World</a>
+        <a href="#markets" class="nav-link">Marchés</a>
+        <a href="#world" class="nav-link">Monde</a>
       </nav>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
         <span aria-hidden="true">◑</span>
       </button>
     </div>
@@ -28,17 +28,17 @@
 
   <main>
     <section class="hero container">
-      <p class="eyebrow">Today &middot; <span id="today-date"></span></p>
-      <h1 class="hero-title">Stay current. Stay informed.</h1>
+      <p class="eyebrow">Aujourd'hui &middot; <span id="today-date"></span></p>
+      <h1 class="hero-title">Restez informé. Restez à jour.</h1>
       <p class="hero-lede">
-        Concise, reliable updates on the stories that matter — refreshed throughout the day.
+        Des mises à jour concises et fiables sur les sujets qui comptent — actualisées tout au long de la journée.
       </p>
     </section>
 
     <section id="latest" class="container">
       <div class="section-head">
-        <h2>Latest stories</h2>
-        <p class="muted">Loading the freshest headlines…</p>
+        <h2>Dernières actualités</h2>
+        <p class="muted">Chargement des dernières nouvelles…</p>
       </div>
       <div id="news-grid" class="news-grid" aria-live="polite"></div>
     </section>
@@ -46,8 +46,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> News Update. All rights reserved.</p>
-      <p class="muted">Built as a static site scaffold.</p>
+      <p>&copy; <span id="year"></span> Actu du jour. Tous droits réservés.</p>
+      <p class="muted">Site statique — modèle de démarrage.</p>
     </div>
   </footer>
 

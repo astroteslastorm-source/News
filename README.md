@@ -1,53 +1,53 @@
-# News Update
+# Actu du jour
 
-A lightweight, static news website scaffold. No build tools, no dependencies — just
-HTML, CSS, and vanilla JavaScript.
+Un site d'actualités statique, léger et sans dépendances. Pas d'outils de build —
+uniquement du HTML, du CSS et du JavaScript vanilla.
 
-## Features
+## Fonctionnalités
 
-- Responsive layout with a clean, newspaper-style hero
-- Light/dark theme toggle (persists via `localStorage`)
-- Stories rendered dynamically from `news.json`
-- Graceful fallback to sample stories if the JSON cannot be loaded
+- Mise en page responsive avec un hero épuré façon presse écrite
+- Bascule thème clair/sombre (persistance via `localStorage`)
+- Articles rendus dynamiquement depuis `news.json`
+- Solution de repli avec articles d'exemple si le JSON ne peut être chargé
 
-## Files
+## Fichiers
 
-| File | Purpose |
+| Fichier | Rôle |
 | --- | --- |
-| `index.html` | Page markup and structure |
-| `styles.css` | Theme variables, layout, and component styles |
-| `script.js` | Theme toggle, date rendering, and story loading |
-| `news.json` | Source of truth for current stories |
+| `index.html` | Structure et balisage de la page |
+| `styles.css` | Variables de thème, mise en page et styles des composants |
+| `script.js` | Bascule de thème, affichage de la date et chargement des articles |
+| `news.json` | Source des articles en cours |
 
-## Running locally
+## Lancement en local
 
-Because `script.js` fetches `news.json`, open the site through a local server
-rather than `file://`:
+`script.js` récupère `news.json` via `fetch`, il faut donc ouvrir le site via
+un serveur local plutôt qu'en `file://` :
 
 ```bash
 # Python 3
 python3 -m http.server 8000
 
-# Or Node
+# Ou Node
 npx serve .
 ```
 
-Then visit <http://localhost:8000>.
+Puis rendez-vous sur <http://localhost:8000>.
 
-## Adding a story
+## Ajouter un article
 
-Edit `news.json` and add an entry to the `stories` array:
+Modifiez `news.json` et ajoutez une entrée au tableau `stories` :
 
 ```json
 {
   "category": "Tech",
-  "title": "Your headline here",
-  "summary": "One or two sentences that summarize the story.",
-  "author": "Byline",
+  "title": "Votre titre ici",
+  "summary": "Une ou deux phrases qui résument l'article.",
+  "author": "Signature",
   "date": "2026-04-15"
 }
 ```
 
-## License
+## Licence
 
 MIT

@@ -2,44 +2,44 @@
   "stories": [
     {
       "category": "Tech",
-      "title": "AI assistants become everyday coworkers",
-      "summary": "Teams are integrating AI copilots into daily workflows, from writing to code review.",
-      "author": "Tech Desk",
+      "title": "Les assistants IA deviennent des collègues du quotidien",
+      "summary": "Les équipes intègrent les copilotes IA dans leurs flux de travail, de la rédaction à la relecture de code.",
+      "author": "Service Tech",
       "date": "2026-04-15"
     },
     {
-      "category": "Markets",
-      "title": "Energy stocks lead as crude prices firm",
-      "summary": "Oil majors rallied on tighter supply signals, while tech held near recent highs.",
-      "author": "Markets Desk",
+      "category": "Marchés",
+      "title": "Les valeurs de l'énergie en tête avec la hausse du brut",
+      "summary": "Les majors pétrolières progressent sur fond de signaux de tension sur l'offre, tandis que la tech reste près de ses sommets.",
+      "author": "Service Marchés",
       "date": "2026-04-15"
     },
     {
-      "category": "World",
-      "title": "Diplomats meet to coordinate humanitarian response",
-      "summary": "A multilateral effort aims to speed aid to regions affected by recent flooding.",
-      "author": "World Desk",
+      "category": "Monde",
+      "title": "Les diplomates coordonnent la réponse humanitaire",
+      "summary": "Un effort multilatéral vise à accélérer l'aide aux régions touchées par les récentes inondations.",
+      "author": "Service Monde",
       "date": "2026-04-14"
     },
     {
       "category": "Science",
-      "title": "Space telescope reveals sharper view of distant galaxies",
-      "summary": "New imagery is helping researchers refine models of early galaxy formation.",
-      "author": "Science Desk",
+      "title": "Un télescope spatial révèle des galaxies lointaines",
+      "summary": "De nouvelles images aident les chercheurs à affiner les modèles de formation des galaxies primitives.",
+      "author": "Service Science",
       "date": "2026-04-14"
     },
     {
-      "category": "Sports",
-      "title": "Underdog run continues in championship bracket",
-      "summary": "A late-season surge has turned the playoffs into one of the most-watched in years.",
-      "author": "Sports Desk",
+      "category": "Sport",
+      "title": "La série de l'outsider se poursuit en phase finale",
+      "summary": "Un sursaut tardif a transformé les playoffs en l'un des plus suivis de ces dernières années.",
+      "author": "Service Sport",
       "date": "2026-04-13"
     },
     {
       "category": "Culture",
-      "title": "Independent cinema sees record festival attendance",
-      "summary": "Programmers credit a strong slate of first-time directors for the turnout.",
-      "author": "Culture Desk",
+      "title": "Le cinéma indépendant bat des records de fréquentation",
+      "summary": "Les programmateurs saluent une sélection solide portée par de nouveaux cinéastes.",
+      "author": "Service Culture",
       "date": "2026-04-12"
     }
   ]
