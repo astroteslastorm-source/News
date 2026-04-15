@@ -1,0 +1,46 @@
+{
+  "stories": [
+    {
+      "category": "Tech",
+      "title": "AI assistants become everyday coworkers",
+      "summary": "Teams are integrating AI copilots into daily workflows, from writing to code review.",
+      "author": "Tech Desk",
+      "date": "2026-04-15"
+    },
+    {
+      "category": "Markets",
+      "title": "Energy stocks lead as crude prices firm",
+      "summary": "Oil majors rallied on tighter supply signals, while tech held near recent highs.",
+      "author": "Markets Desk",
+      "date": "2026-04-15"
+    },
+    {
+      "category": "World",
+      "title": "Diplomats meet to coordinate humanitarian response",
+      "summary": "A multilateral effort aims to speed aid to regions affected by recent flooding.",
+      "author": "World Desk",
+      "date": "2026-04-14"
+    },
+    {
+      "category": "Science",
+      "title": "Space telescope reveals sharper view of distant galaxies",
+      "summary": "New imagery is helping researchers refine models of early galaxy formation.",
+      "author": "Science Desk",
+      "date": "2026-04-14"
+    },
+    {
+      "category": "Sports",
+      "title": "Underdog run continues in championship bracket",
+      "summary": "A late-season surge has turned the playoffs into one of the most-watched in years.",
+      "author": "Sports Desk",
+      "date": "2026-04-13"
+    },
+    {
+      "category": "Culture",
+      "title": "Independent cinema sees record festival attendance",
+      "summary": "Programmers credit a strong slate of first-time directors for the turnout.",
+      "author": "Culture Desk",
+      "date": "2026-04-12"
+    }
+  ]
+}
